@@ -9,7 +9,6 @@ order by created_at
 limit 5;
 ```
 ![Alt text](Images/image-1.png)
-![Alt text](C:\Users\khush\SQL\Instagram_Project_SQL\Images\image-1.png)
 
 2. Your Task: Identify users who have never posted a single photo on Instagram.
 
@@ -19,7 +18,7 @@ left join photos p
 on u.id = p.user_id
 where p.image_url is null
 ```
-![Alt text](image-2.png)
+![Alt text](Images/image-2.png)
 
 3. Your Task: Determine the winner of the contest and provide their details to the team. 
 
@@ -32,7 +31,7 @@ where us.id = p.user_id
 order by Num_of_likes Desc
 LIMIT 1
 ```
-![Alt text](image-3.png)
+![Alt text](Images/image-3.png)
 
 4. Your Task: Identify and suggest the top five most commonly used hashtags on the platform
 ```
@@ -42,7 +41,7 @@ on tg.tag_id = t.id
 order by tg.Count_of_hashtags desc
 limit 5
 ```
-![Alt text](image-4.png)
+![Alt text](Images/image-4.png)
 
 5. Your Task: Determine the day of the week when most users register on Instagram. Provide insights on when to schedule an ad campaign.
 
@@ -52,7 +51,7 @@ group by Day_of_week
 order by Num_of_registration DESC
 limit 2
 ```
-![Alt text](image-5.png)
+![Alt text](Images/image-5.png)
 
 6. Your Task: Calculate the average number of posts per user on Instagram. Also, provide the total number of photos on Instagram divided by the total number of users.
 
@@ -63,7 +62,7 @@ group by username) final
 
 SELECT ROUND((SELECT COUNT(*) FROM photos) / (SELECT COUNT(*) FROM users), 1) AS Avg_photos_per_user;
 ```
-![Alt text](image-6.png)
+![Alt text](Images/image-6.png)
 
 
 
