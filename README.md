@@ -9,7 +9,7 @@ order by created_at
 limit 5;
 ```
 
-![Alt text](image-1.png)
+![Alt text](C:\Users\khush\SQL\Instagram_Project_SQL\Images\image-1.png)
 
 2. Your Task: Identify users who have never posted a single photo on Instagram.
 
